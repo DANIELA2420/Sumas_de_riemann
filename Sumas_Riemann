@@ -1,0 +1,21 @@
+% Daniela Rodriguez Rivera
+%recuperación
+%05/Julio/2021
+%f(x)=-6x+x^2  [-2,3]
+b=-2;
+a=3;
+n=input('Ingrese valor de n: ');
+base=(b-a)/n;
+A=0;
+x=a;
+for i=0:n-1
+ 
+ x += base;
+  f = -6*x+x.^2;
+ 
+ A = A + abs(base*f);
+
+endfor 
+
+printf("Area = ");
+disp(A);
